@@ -103,6 +103,10 @@ select {
 ul li{
     display:inline;
     margin:10px 60px 10px 10px;
+    cursor: alias;
+}
+.li{
+  cursor: alias;
 }
 /* End NAVIGATION*/
  
@@ -122,7 +126,11 @@ ul li{
   max-width: 892px;
 }
 
-
+a{
+  cursor:unset;
+  text-decoration: none;
+  color: black;
+}
 
 .button{
   color: black;
@@ -132,9 +140,10 @@ ul li{
   padding: 1px;
   text-align: center;
   font-size: 17px;
-  margin-top: 5px;
+  margin-top: 20px;
   border-radius: 20px;
   background-color: transparent;
+  cursor:alias;
 }
 
 .button2{
@@ -147,6 +156,7 @@ ul li{
   font-size: 17px;
   border-radius: 20px;
   background-color: transparent;
+  cursor: alias;
 }
 
 .title-wrapper img {
@@ -169,53 +179,71 @@ ul li{
   margin: 10px;
 }
 
-.my-works-txt{
-   margin-top: 118px;
-   margin-bottom: 75px;
-   font-size: 17px;
-   margin: 10px;
-}
-
-.my-projects{
+.my works {
   display: flex;
-  margin: 10px;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  max-width: 1080px;
-
+  margin: 20px 0 0 0;
 }
-
-.proj01{
-  flex: 1 1 auto;
-  margin: 15px;
-  width: 310px;
-  height: 400px;
-  padding: 5px;
-  border: 1px solid black;
-  float:inline-start;
-  border-radius: 20px;
-}
-
-.proj01 img{
-  width: 309px;
-  max-height: 265px;
-}
-
-
-.work-process{
+.my-works-txt{
+  display: inline;
   margin-top: 118px;
   margin-bottom: 75px;
   font-size: 17px;
   margin: 10px;
-  margin-bottom: 165px;
+}
+
+.my-projects{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.proj01{
+  border: 1px solid #494A49;
+  border-radius: 20px;
+  width: 310px;
+  height: 400px;
+  margin: 80px 38px 80px 38px;
+}
+
+.proj01 img{
+  height: 265px;
+  border-radius: 20px;
+}
+
+.process-txt{
+  justify-content: left;
+  margin-top: 118px;
+  margin-bottom: 75px;
+  font-size: 17px;
+  margin: 10px;
+}
+
+.work-process{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 60px 0;
 }
 
 
+.paragraph {
+  display: inline;
+  justify-content: left;
+  align-items: center;
+  margin: 0 0 0 0;
+  max-width: 1080px;
+  width: 100%;
+}
+
 .discription {
- float: right;
- width: 35%;
- text-align: left;
- font-size: 17;
+  position: relative;
+  max-width: 465px;
+  left: 55%;
+  width: 100%;
 }
   
 
@@ -231,7 +259,7 @@ ul li{
 .contact-txt {
   margin-top: 61px;
   margin-bottom: 61px;
-  font-size: 17px;
+  font-size: 20px;
   margin: 10px;
 }
 
@@ -243,52 +271,63 @@ ul li{
   margin: 10px;
 }
 
-#your-name {
-  border-radius: 20px;
+#your-name-input {
+  border-radius: 10px;
   width: 400px;
   height: 50px;
   padding: 10px;
   margin: 10px;
+  margin-top: 25px;
 }
 
-#email {
-  border-radius: 20px;
+#emailinput{
+  border-radius: 10px;
   width: 400px;
   height: 50px;
   padding: 10px;
   margin: 10px;
+  margin-top: 20px;
 }
 
-label {
-  font-size: 17px;
+.label {
+  font-size: 20px;
 }
 
-.button-get-started {
-  color: white;
-  margin: 0 25px 0 0px;
+
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.social-media img {
+  margin: 35px 10px 10px 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#submitend{
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 10px;
   height: 30px;
   width: 180px;
   padding: 1px;
   text-align: center;
   font-size: 17px;
   border-radius: 20px;
-  background-color: grey;
-  margin-top: 30px;
-
-  
 }
 
-.submitend {
-  color: white;
-  margin: 0 25px 0 0px;
-  height: 30px;
-  width: 180px;
-  padding: 1px;
-  text-align: center;
-  font-size: 17px;
-  border-radius: 20px;
-  background-color: grey;
-  margin-top: 30px;
-
+#concactinput-id{
+  width: 50%;
 }
 
+a:hover{
+  color: #660066;
+}
+
+button:hover{
+  background-color: #c8a2c8;
+}
